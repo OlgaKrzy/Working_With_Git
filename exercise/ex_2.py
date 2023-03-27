@@ -22,3 +22,14 @@ r = 5
 pole_kolo = zmienna_pi*(r^2)
 obwod_kolo = 2*zmienna_pi*r
 print("Obwód koła wynosi: " + str(obwod_kolo) +", a pole " + str(pole_kolo) + ".")
+
+#trapez
+
+d = 9
+e = 4
+f = 6
+g = 5
+
+pole_trapez = (d * e) / 2
+obwod_trapez = d + e + f + g
+print("Obwód trapezu wynosi: " + str(obwod_trapez) +", a pole " + str(pole_trapez) + ".")
