@@ -15,13 +15,15 @@ def prostokat(bok_a, bok_b):
     return 0, 0
 
 # rownoleglobok i romb dla studenta 2
-def rownoleglobok(bok_a, bok_b, wysokosc_a):
-    # TODO
-    return 0, 0
+def rownoleglobok(bok_a_row, bok_b_row, wysokosc_a_row):
+    obwod_row = 2 * bok_a_row + 2 * bok_b_row
+    pole_row = bok_a_row * wysokosc_a_row
+    return obwod_row, pole_row
 
-def romb(bok, wysokosc):
-    # TODO
-    return 0, 0
+def romb(bok_rom, wysokosc_rom):
+    obwod_rom = 4 * bok_rom
+    pole_rom = bok_rom * wysokosc_rom
+    return obwod_rom, pole_rom
 
 # trapez i kolo dla studenta 3
 def trapez(bok_a, bok_b, bok_c, bok_d, wysokosc_a):
