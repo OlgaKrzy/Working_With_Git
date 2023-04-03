@@ -2,17 +2,18 @@ def trojkat(bok_a, bok_b, bok_c, wysokosc_a):
     obwod = bok_a + bok_b + bok_c
     pole = (bok_a * wysokosc_a) / 2
     return obwod, pole
-
+#do każdego przykładu utworzyłyśmy osobne zmienne - w przypadku osób początkujących (jak my :)) kod będzie bardzo czytelny i ładny
 
 # kwadrat, prostokat dla studenta 1
-def kwadrat(bok):
-    # TODO
-    return 0, 0
+def kwadrat(bok_kwad):
+    obwod_kwad = bok_kwad*4
+    pole_kwad = bok_kwad*bok_kwad
+    return obwod_kwad, pole_kwad
 
-
-def prostokat(bok_a, bok_b):
-    # TODO
-    return 0, 0
+def prostokat(bok_a_pros, bok_b_pros):
+    obwod_pros = bok_a_pros*2 + bok_b_pros*2
+    pole_pros = bok_a_pros*bok_b_pros
+    return obwod_pros, pole_pros
 
 # rownoleglobok i romb dla studenta 2
 def rownoleglobok(bok_a, bok_b, wysokosc_a):
