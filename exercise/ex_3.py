@@ -34,10 +34,10 @@ def trapez(bok_trapezu1, bok_trapezu2, bok_trapezu3, bok_trapezu4, wysokosc_trap
 
 import math
 pi=math.pi
-def kolo(promien):
+def kolo(promien_kola):
 
-obwod=2 * pi * promien
-pole= promien * promien * pi
+obwod_kolo=2 * pi * promien_kola
+pole_kola= promien_kola * promien_kola * pi
 return obwod_kolo, pole_kola
 
 
