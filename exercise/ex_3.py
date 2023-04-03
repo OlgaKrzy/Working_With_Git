@@ -26,15 +26,22 @@ def romb(bok_rom, wysokosc_rom):
     pole_rom = bok_rom * wysokosc_rom
     return obwod_rom, pole_rom
 
-# trapez i kolo dla studenta 3
-def trapez(bok_a, bok_b, bok_c, bok_d, wysokosc_a):
-    # TODO
-    return 0, 0
+# trapez, koło dla studenta 3
+def trapez(bok_trapezu1, bok_trapezu2, bok_trapezu3, bok_trapezu4, wysokosc_trap):
+    obwod_trap = bok_trapezu1 + bok_trapezu2 + bok_trapezu3 + bok_trapezu4
+    pole_trap = ((bok_trapezu1 + bok_trapezu2)*wysokosc_trap)/2
+    return obwod_trap,pole_trap
 
 
-def kolo(promien):
-    # TODO
-    return 0, 0
+
+
+import math
+pi=math.pi
+def kolo(promien_kola):
+
+obwod_kolo=2 * pi * promien_kola
+pole_kola= promien_kola * promien_kola * pi
+return obwod_kolo, pole_kola
 
 
 assert trojkat(10, 15, 16, 8) == (41, 40)
