@@ -63,3 +63,45 @@ for student in studenci:
     if last_name.startswith("N"):
         liczba_n += 1
 print("Liczba studentow na N wynosi: " + str(liczba_n))
+
+# zadanie 1.10
+
+
+def subtract_vectors(list_a, list_b):
+    result = []
+    for item_a, item_b in zip(list_a, list_b):
+        result.append(item_b - item_a)
+    return result
+
+
+def are_vectors_equal(list_a, list_b):
+    result = True
+    for item_a, item_b in zip(list_a, list_b):
+        if item_a != item_b:
+            result = False
+    return result
+
+
+wykres_1 = [[2, 4], [4, 4], [6, 4]]
+wykres_2 = [[2, 3], [4, 4], [6, 5]]
+wykres_3 = [[2, 3], [4, 3], [5, 4]]
+
+
+wykres_1_funkcja_liniowa = are_vectors_equal(subtract_vectors(wykres_1[0], wykres_1[1]), subtract_vectors(wykres_1[1], wykres_1[2]))
+wykres_2_funkcja_liniowa = are_vectors_equal(subtract_vectors(wykres_2[0], wykres_2[1]), subtract_vectors(wykres_2[1], wykres_2[2]))
+wykres_3_funkcja_liniowa = are_vectors_equal(subtract_vectors(wykres_3[0], wykres_3[1]), subtract_vectors(wykres_3[1], wykres_3[2]))
+
+if wykres_1_funkcja_liniowa:
+    print("Dla punktow w wykres_1 mozna wyznaczyc funkcje liniowa.")
+else:
+    print("Dla punktow w wykres_1 nie mozna wyznaczyc funkcji liniowej.")
+
+if wykres_2_funkcja_liniowa:
+    print("Dla punktow w wykres_2 mozna wyznaczyc funkcje liniowa.")
+else:
+    print("Dla punktow w wykres_2 nie mozna wyznaczyc funkcji liniowej.")
+
+if wykres_3_funkcja_liniowa:
+    print("Dla punktow w wykres_3 mozna wyznaczyc funkcje liniowa.")
+else:
+    print("Dla punktow w wykres_3 nie mozna wyznaczyc funkcji liniowej.")
