@@ -46,7 +46,9 @@ def kolo(promien_kola):
 
 assert trojkat(10, 15, 16, 8) == (41, 40)
 assert kwadrat(20) == (80, 400)
+assert kwadrat(12) == (48,144)
 assert prostokat(12, 10) == (44, 120)
+assert prostokat(5,6) == (22, 30)
 assert rownoleglobok(6, 5, 2) == (22, 12)
 assert rownoleglobok(10, 8, 7) == (36, 70)
 assert romb(10, 5) == (40, 50)
