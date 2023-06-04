@@ -104,7 +104,6 @@ class Student:
 
 student_Olga = Student("Olga", "Krzyczkowska", 129141)
 
-# wskaźnik do obiektu w pamięci wirtualnej  -> nie jest to de facto wskaźnik: gdyby to był wskaźnik, to moglibyśmy pracować zarówno na wskaźniku jak i na obiekcie, na który wskazuje (dereferencji wskaźnika)
 
 student_Olga.dodaj_ocene(4)
 print(student_Olga)
@@ -157,3 +156,5 @@ Fafik.fatness()
 
 print("Informacje o Fafice: " + str(Fafika))
 Fafika.fatness()
+
+print(Pies.__int__(Fafik))
